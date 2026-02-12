@@ -43,6 +43,12 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 4. Click **Send Shout Out** to submit; an alert confirms the action in this mock build.
 5. Use **Cancel** or **×** to close the form.
 
+### Make a Webex call
+1. Click **Call** (📞) in the toolbar.
+2. Enter the **Country code** (e.g., `+1`) and **Mobile number**.
+3. Click **Call** to simulate starting a Webex call; an alert confirms the target number.
+4. Use **Cancel** or **×** to close the form.
+
 ### Recognition (placeholder)
 - Click **Recognition** to see the current placeholder alert (“coming soon”).
 
