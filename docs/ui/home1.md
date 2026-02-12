@@ -36,6 +36,13 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
    - Enter **Group Name** and **Criteria** (comma-separated skills/departments).
    - Submit to auto-populate members whose skills match the criteria; a Webex link is generated from the name (or the Python Group special-case link).
 
+### Send a shout out
+1. Click **Shout Out** in the toolbar.
+2. Enter **Name** and **Email** of the recipient (required).
+3. (Optional) Add a message.
+4. Click **Send Shout Out** to submit; an alert confirms the action in this mock build.
+5. Use **Cancel** or **×** to close the form.
+
 ### Recognition (placeholder)
 - Click **Recognition** to see the current placeholder alert (“coming soon”).
 
