@@ -6,11 +6,49 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 1. Pull the latest code repo and open `ui/home1.html` directly in a browser (no build needed).
 2. Everything is mocked in the file—data loads from inline JavaScript arrays.
 
-## What’s included
-- Top toolbar with navigation to Posts, Groups, Recognition, Quick Poll.
-- Main feed rendering sample posts and a quick poll with vote handling.
-- Groups modal with “New” button, group creation form, and Webex “Meet” buttons (special-case link for “Python Group”).
-- Sidebar panels: Upcoming Events, Job Opportunities, New Hires (with “Wish” action), Work Anniversaries, Notifications.
+## What’s included (at a glance)
+- Top toolbar: Posts, Groups, Recognition, Quick Poll.
+- Main feed: sample posts and a poll renderer.
+- Groups modal: list + create, with Webex “Meet” buttons (special-case link for “Python Group”).
+- Sidebar: Upcoming Events, Job Opportunities, New Hires (with “Wish”), Work Anniversaries, Notifications.
+
+## How to use the page
+
+### Create a post
+1. Click **Posts** (top row) to reveal the Post form.
+2. Fill Title, Content, Tags (comma separated), and select one or more BUs.
+3. Click **Post** to add it to the feed; **Cancel** hides the form and clears inputs.
+
+### Create a quick poll
+1. Click **Quick Poll** to open the poll form.
+2. Enter the **Poll question**.
+3. In **Poll options**, type one option per line.
+4. Select one or more BUs (visibility scope).
+5. Click **Post** to publish; **Cancel** hides and clears the form.
+6. Voting: select an option and submit; results render immediately with percentages. Repeat clicks are blocked per mock “demo-user”.
+
+### Manage groups
+1. Click **Groups** to open the modal.
+2. To view a group: click its name to see members and a **Meet** button.
+3. To start a meeting: click **Meet** (Python Group always routes to `https://cisco.webex.com/meet/gisankar`; others use the group’s Webex link).
+4. To create a group:
+   - Click **New**.
+   - Enter **Group Name** and **Criteria** (comma-separated skills/departments).
+   - Submit to auto-populate members whose skills match the criteria; a Webex link is generated from the name (or the Python Group special-case link).
+
+### Recognition (placeholder)
+- Click **Recognition** to see the current placeholder alert (“coming soon”).
+
+### Sidebar actions
+- **Upcoming Events / Job Opportunities:** click **RSVP/Apply** (non-functional stubs).
+- **New Hires:** click **Wish** to trigger a “good luck” alert.
+- **Work Anniversaries / Notifications:** static list items for now.
+
+## Known limitations (mock state)
+- All data is in-memory; refresh resets posts, polls, and groups to defaults.
+- No persistence, auth, or backend calls.
+- Accessibility is minimal (add ARIA and keyboard focus handling before production).
+- No analytics or input validation beyond simple required-field checks.
 
 ## Notes for engineers
 - All styling is inline in `home1.html` (no external assets).
