@@ -7,9 +7,10 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 2. Everything is mocked in the file—data loads from inline JavaScript arrays.
 
 ## What’s included (at a glance)
-- Top toolbar: Posts, Groups, Recognition, Quick Poll.
+- Top toolbar: Posts, Groups, Recognition, Quick Poll, Call.
 - Main feed: sample posts and a poll renderer.
 - Groups modal: list + create, with Webex “Meet” buttons (special-case link for “Python Group”).
+- Call modal: simple Webex call launcher with name + email inputs.
 - Sidebar: Upcoming Events, Job Opportunities, New Hires (with “Wish”), Work Anniversaries, Notifications.
 
 ## How to use the page
@@ -36,15 +37,14 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
    - Enter **Group Name** and **Criteria** (comma-separated skills/departments).
    - Submit to auto-populate members whose skills match the criteria; a Webex link is generated from the name (or the Python Group special-case link).
 
-### Send a shout out
-1. Click **Shout Out** in the toolbar.
-2. Enter **Name** and **Email** of the recipient (required).
-3. (Optional) Add a message.
-4. Click **Send Shout Out** to submit; an alert confirms the action in this mock build.
-5. Use **Cancel** or **×** to close the form.
-
 ### Recognition (placeholder)
 - Click **Recognition** to see the current placeholder alert (“coming soon”).
+
+### Start a call
+1. Click **Call** in the toolbar.
+2. Enter **Name** and **Email** (both required).
+3. Click **Call** to open Webex at `https://cisco.webex.com/meet/gisankar` in a new tab.
+4. Use **Cancel** or **×** to close the modal.
 
 ### Sidebar actions
 - **Upcoming Events / Job Opportunities:** click **RSVP/Apply** (non-functional stubs).
