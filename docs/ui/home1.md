@@ -7,9 +7,10 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 2. Everything is mocked in the file—data loads from inline JavaScript arrays.
 
 ## What’s included (at a glance)
-- Top toolbar: Posts, Recognition, Quick Poll, Call.
+- Top toolbar: Posts, Recognition, Quick Poll, Call, Reports.
 - Main feed: sample posts and a poll renderer.
 - Call modal: simple Webex call launcher with name + email inputs.
+- Reports modal: generate department reports with filters, preview results, and download in PDF/XLS.
 - Sidebar: Upcoming Events, Job Opportunities, New Hires (with “Wish”), Work Anniversaries, Notifications.
 
 ## How to use the page
@@ -32,6 +33,14 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 2. Enter **Name** and **Email** (both required).
 3. Click **Call** to open Webex at `https://cisco.webex.com/meet/gisankar` in a new tab.
 4. Use **Cancel** or **×** to close the modal.
+
+### Generate a report
+1. Click **Reports** in the toolbar to open the Reports modal.
+2. Select a department, report type, date range, and format.
+3. Optionally, include moderation details.
+4. Click **Preview** to view the generated report data.
+5. Click **Download** to save the report in the selected format.
+6. View the download history in the modal.
 
 ### Sidebar actions
 - **Upcoming Events / Job Opportunities:** click **RSVP/Apply** (non-functional stubs).
