@@ -1,15 +1,14 @@
 # Cisco Social Home (sample UI)
 
-This static HTML page lives in the code repo at `ui/home1.html`. It showcases the Cisco Social experience (posts, quick polls, groups modal) without any backend.
+This static HTML page lives in the code repo at `ui/home1.html`. It showcases the Cisco Social experience (posts, quick polls) without any backend.
 
 ## How to preview
 1. Pull the latest code repo and open `ui/home1.html` directly in a browser (no build needed).
 2. Everything is mocked in the file—data loads from inline JavaScript arrays.
 
 ## What’s included (at a glance)
-- Top toolbar: Posts, Groups, Recognition, Quick Poll, Call.
+- Top toolbar: Posts, Recognition, Quick Poll, Call.
 - Main feed: sample posts and a poll renderer.
-- Groups modal: list + create, with Webex “Meet” buttons (special-case link for “Python Group”).
 - Call modal: simple Webex call launcher with name + email inputs.
 - Sidebar: Upcoming Events, Job Opportunities, New Hires (with “Wish”), Work Anniversaries, Notifications.
 
@@ -28,18 +27,6 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 5. Click **Post** to publish; **Cancel** hides and clears the form.
 6. Voting: select an option and submit; results render immediately with percentages. Repeat clicks are blocked per mock “demo-user”.
 
-### Manage groups
-1. Click **Groups** to open the modal.
-2. To view a group: click its name to see members and a **Meet** button.
-3. To start a meeting: click **Meet** (Python Group always routes to `https://cisco.webex.com/meet/gisankar`; others use the group’s Webex link).
-4. To create a group:
-   - Click **New**.
-   - Enter **Group Name** and **Criteria** (comma-separated skills/departments).
-   - Submit to auto-populate members whose skills match the criteria; a Webex link is generated from the name (or the Python Group special-case link).
-
-### Recognition (placeholder)
-- Click **Recognition** to see the current placeholder alert (“coming soon”).
-
 ### Start a call
 1. Click **Call** in the toolbar.
 2. Enter **Name** and **Email** (both required).
@@ -52,7 +39,7 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 - **Work Anniversaries / Notifications:** static list items for now.
 
 ## Known limitations (mock state)
-- All data is in-memory; refresh resets posts, polls, and groups to defaults.
+- All data is in-memory; refresh resets posts and polls to defaults.
 - No persistence, auth, or backend calls.
 - Accessibility is minimal (add ARIA and keyboard focus handling before production).
 - No analytics or input validation beyond simple required-field checks.
