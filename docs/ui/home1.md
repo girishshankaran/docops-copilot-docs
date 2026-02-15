@@ -73,6 +73,7 @@ Last synced from `ui/home1.html` at 2026-02-15T11:20:24Z.
 
 ### Added UI lines
 - `<h1>Cisco Social</h1>`
+- Role selector for demo login.
 
 ### Removed UI lines
 - `<h1>Cisco Social App</h1>`
