@@ -66,3 +66,13 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 ## Next steps
 - Swap mock data with API calls when endpoints are ready.
 - Add tests or linting once the page is integrated into the main build pipeline.
+
+## Automated UI Sync Notes
+
+Last synced from `ui/home1.html` at 2026-02-15T10:32:28Z.
+
+### Added UI lines
+- `<button id="insightsBtn">Insights Dashboard</button>`
+
+### Removed UI lines
+- `<button id="insightsBtn">Insights Hub</button>`
