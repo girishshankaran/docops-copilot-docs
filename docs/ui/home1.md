@@ -1,6 +1,6 @@
 # Cisco Social Home (sample UI)
 
-This static HTML page lives in the code repo at `ui/home1.html`. It showcases the Cisco Social experience (posts, quick polls) without any backend.
+This static HTML page lives in the code repo at `ui/home1.html`. It showcases the Cisco Social experience (posts, quick polls, shout outs) without any backend.
 
 ## How to preview
 1. Pull the latest code repo and open `ui/home1.html` directly in a browser (no build needed).
@@ -8,7 +8,7 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 
 ## What’s included (at a glance)
 - Top toolbar: Posts, Recognition, Quick Poll, Call, Reports.
-- Main feed: sample posts and a poll renderer.
+- Main feed: sample posts, a poll renderer, and shout outs.
 - Call modal: simple Webex call launcher with name + email inputs.
 - Reports modal: generate department reports with filters, preview results, and download in PDF/XLS.
 - Sidebar: Upcoming Events, Job Opportunities, New Hires (with “Wish”), Work Anniversaries, Notifications.
@@ -42,6 +42,13 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 5. Click **Download** to save the report in the selected format.
 6. View the download history in the modal.
 
+### Shout Out
+1. Click **Shout Out** in the toolbar to open the Shout Out modal.
+2. Select a person from the dropdown.
+3. Choose visibility: All or Specific department(s).
+4. If selecting Specific department(s), choose the departments from the list.
+5. Click **OK** to submit the shout out; **Cancel** hides the modal.
+
 ### Sidebar actions
 - **Upcoming Events / Job Opportunities:** click **RSVP/Apply** (non-functional stubs).
 - **New Hires:** click **Wish** to trigger a “good luck” alert.
@@ -72,6 +79,8 @@ Last synced from `ui/home1.html` at 2026-02-15T11:20:24Z.
 - Role selector for demo login.
 - Reports button in the toolbar.
 - Reports modal for generating department reports.
+- Shout Out button in the toolbar.
+- Shout Out modal for recognizing teammates.
 
 ### Removed UI lines
 - `<h1>Cisco Social App</h1>`
