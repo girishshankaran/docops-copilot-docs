@@ -7,7 +7,7 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 2. Everything is mocked in the file—data loads from inline JavaScript arrays.
 
 ## What’s included (at a glance)
-- Top toolbar: Posts, Groups, Recognition, Quick Polling, Call.
+- Top toolbar: Posts, Groups, Recognition, Quick Poll, Call.
 - Main feed: sample posts and a poll renderer.
 - Groups modal: list + create, with Webex “Meet” buttons (special-case link for “Python Group”).
 - Call modal: simple Webex call launcher with name + email inputs.
@@ -21,7 +21,7 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 3. Click **Post** to add it to the feed; **Cancel** hides the form and clears inputs.
 
 ### Create a quick poll
-1. Click **Quick Polling** to open the poll form.
+1. Click **Quick Poll** to open the poll form.
 2. Enter the **Poll question**.
 3. In **Poll options**, type one option per line.
 4. Select one or more BUs (visibility scope).
@@ -72,7 +72,7 @@ This static HTML page lives in the code repo at `ui/home1.html`. It showcases th
 Last synced from `ui/home1.html` at 2026-02-15T11:20:24Z.
 
 ### Added UI lines
-- `<h1>Cisco Social App</h1>`
+- `<h1>Cisco Social</h1>`
 
 ### Removed UI lines
-- `<h1>Cisco Social</h1>`
+- `<h1>Cisco Social App</h1>`
